@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import { useGetCatalog } from "./service/query/useGetCatalog";
 import Skeleton from "react-loading-skeleton";
 import { Input } from "../../components/input/input";
-import { Vector2 } from "../../../public/vector2";
+import { Vector2 } from "../../../public/vector2.jsx";
 
 export const Header = () => {
   const { close, isOpen, open } = useModal();

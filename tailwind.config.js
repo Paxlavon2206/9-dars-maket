@@ -20,6 +20,7 @@ export default {
         inputBg:"#F2F4F7",
         inputborder: "#857372",
         inputtext:"rgb(83, 67, 67)",
+        productB:"#F6F6F6",
       },
       container:{
         center:true,
