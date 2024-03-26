@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { useGetBanner } from "../../service/query/useGetBanner";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import { useGetCatalog } from "../../../../layout/header/service/query/useGetCatalog";

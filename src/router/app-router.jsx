@@ -10,7 +10,7 @@ export default [
     },
     {
         component: <Category/>,
-        path: "category/:id",
+        path: "category/:slug",
         id: nanoid(),
     },
 ]
