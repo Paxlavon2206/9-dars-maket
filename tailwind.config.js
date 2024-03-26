@@ -18,6 +18,8 @@ export default {
         modal: 'rgba(0, 0, 0, .5)',
         redBg: 'rgb(218, 0, 43)',
         inputBg:"#F2F4F7",
+        inputborder: "#857372",
+        inputtext:"rgb(83, 67, 67)",
       },
       container:{
         center:true,

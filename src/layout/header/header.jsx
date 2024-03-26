@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import { useGetCatalog } from "./service/query/useGetCatalog";
 import Skeleton from "react-loading-skeleton";
 import { Input } from "../../components/input/input";
-import { SearchIcon } from "../../../public/search-icon";
+import { Vector2 } from "../../../public/vector2";
 
 export const Header = () => {
   const { close, isOpen, open } = useModal();
@@ -81,7 +81,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="hidden md:flex flex-grow-1 justify-between py-[18px] items-center">
-        <div className="flex">
+        <div className="flex mr-8">
           <Modal close={close} isOpen={isOpen}>
             <Link className=" text-red-700" to="/category/123">
               Category
@@ -116,7 +116,30 @@ export const Header = () => {
           </Button>
         </div>
         <Search />
-        <Buttons />
+        <div className="flex justify-between">
+          <Button className="text-center w-[66px] lg:mr-8">
+            <div className="flex justify-center">
+              <Vector2 />
+            </div>
+            <h3 className="md:text-[12px] lg:text-[15px]">Войти</h3>
+          </Button>
+
+          <Button className="text-center w-[66px] lg:mr-8">
+            <div className="flex justify-center">
+              <Vector />
+            </div>{" "}
+            <p className="md:text-[12px] lg:text-[15px]">Избранное</p>
+          </Button>
+          <Button className=" relative text-center md:w-10 lg:w-[81px] ">
+            <div className="flex justify-center">
+              <ShoppingCard />
+            </div>
+            <p className="md:text-[12px] lg:text-[15px]">Корзина</p>
+            <span className=" absolute -top-[17%] px-[7px] rounded-[50%] bg-redBg text-white">
+              0
+            </span>
+          </Button>
+        </div>
       </div>
     </div>
   );
