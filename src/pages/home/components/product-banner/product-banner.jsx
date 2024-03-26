@@ -24,7 +24,7 @@ const settings = {
       }
     },
     {
-      breakpoint: 0, // Small screens
+      breakpoint: 320, // Small screens
       settings: {
         slidesToShow: 1,
       }
