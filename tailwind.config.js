@@ -21,6 +21,7 @@ export default {
         inputborder: "#857372",
         inputtext:"rgb(83, 67, 67)",
         productB:"#F6F6F6",
+        ads:"rgb(254, 238, 0)",
       },
       container:{
         center:true,
