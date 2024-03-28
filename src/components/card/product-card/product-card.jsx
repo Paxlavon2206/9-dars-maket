@@ -25,8 +25,10 @@ export const ProductCard = ({img, title, rame, color, price, id}) => {
           <img className='w-[165px]' src={img} alt="img" />
           <div><Button className="hover:scale-110"><MyComponent/></Button></div>
         </div>
-        <div className='justify-between'>
+        <div className=' h-full flex flex-col justify-between'>
+          <div>
           <h2 className='mb-6'>{title}</h2>  
+          </div>
           <div className='flex justify-between items-center'>
             <strong>{price} Сум</strong>
             <Button className="bg-redBg p-2 rounded-lg hover:scale-110">
