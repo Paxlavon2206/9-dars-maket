@@ -1,16 +1,9 @@
 import React from "react";
 import { Call } from "../../../public/call";
-import { MobileTime } from "/public/mobile-time";
-import { MobileInternet } from "../../../public/mobile-internet";
-import { MobileWifi } from "/public/mobile-wifi.jsx";
-import { MobileBattery } from "/public/mobile-battery";
 import { Avatar } from "../../../public/avatar";
 import { Vector } from "../../../public/vector";
 import { ShoppingCard } from "../../../public/shopping-card";
 import { Search } from "../header/components/search/search";
-import { Buttons } from "../header/components/buttons/buttons";
-import headerLogo from "../../assets/img/header-logo.svg";
-import Logoweb from "../../assets/img/logo-web.svg";
 import { Button } from "../../components/button/button";
 import { MenuIcon } from "../../../public/menu-icon";
 import { Modal } from "../../components/ui/modal/modal";
@@ -26,15 +19,6 @@ export const Header = () => {
   const { data, isLoading } = useGetCatalog();
   return (
     <div className=" container">
-      <div className=" mb-[16px] md:hidden flex justify-between">
-        <div>
-          <MobileTime />
-        </div>
-        <div className="flex items-center gap-2">
-          {" "}
-          <MobileInternet /> <MobileWifi /> <MobileBattery />{" "}
-        </div>
-      </div>
       <div className="hidden lg:flex justify-end pt-2 ">
         <a className="mr-[24px] hover:text-redBg" href="/">
           Доставка и оплата

@@ -20,3 +20,10 @@ export const useGetDifferent3 = () => {
     queryFn:()=> request.get(`/washingM`, {params:{ _limit:3}}).then((res)=> res.data)
   })
 }
+
+export const PopularBrands = () => {
+  return useQuery({
+    queryKey:['brand'],
+    queryFn:()=> request.get(`/brand`).then((res)=> res.data)
+  })
+}

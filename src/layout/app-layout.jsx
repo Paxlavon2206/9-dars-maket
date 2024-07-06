@@ -6,7 +6,7 @@ import { Header}from "../layout/header/header"
 
 export const AppLayout = () => {
   return (
-    <div className=' h-screen flex flex-col justify-between'>
+    <div className='h-screen flex flex-col justify-between'>
         <div className='wrapper'>
         <header><Header/></header>
         <main><Outlet/></main>

@@ -48,7 +48,7 @@ export const Banner = () => {
     <Slider {...settings}>
       {data?.map((item) => (
         <div key={item.id}>
-          <img src={item.img} alt="img" />
+          <img className="hover:scale-105 cursor-pointer transition duration-300" src={item.img} alt="img" />
         </div>
       ))}
     </Slider>

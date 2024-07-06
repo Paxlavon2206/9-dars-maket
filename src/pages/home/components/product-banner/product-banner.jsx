@@ -46,11 +46,11 @@ export const ProductBanner = () => {
         ))
       ) : (
         data?.map((item) => (
-          <div key={item.id}>
+          <div className="hover:scale-105 cursor-pointer transition duration-300 " key={item.id}>
             <Link to={`/category/${item.name}`}>
               <div className="flex justify-center bg-productB mr-2 ml-2 p-3">
                 <img className="w-[96px] h-[96px]" src={item.img} alt="img" />
-                <p className="pt-9 pl-4">{item.text}</p>
+                <p className="pt-5 pl-4">{item.text}</p>
               </div>
             </Link>
           </div>
