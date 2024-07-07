@@ -22,5 +22,30 @@ a{
 .container{
     box-sizing: border-box;
 }
+.hover-effect {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
+  .hover-effect::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px; /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: red; /* Adjust the underline color */
+    transition: width 0.3s ease-out; /* Adjust the duration for the underline */
+  }
+
+  .hover-effect:hover {
+    color: #e3342f; /* Adjust the hover text color */
+  }
+
+  .hover-effect:hover::before {
+    width: 100%;
+  }
 

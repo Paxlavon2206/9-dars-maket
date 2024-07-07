@@ -1,4 +1,3 @@
-import React from "react";
 import { Call } from "../../../public/call";
 import { Avatar } from "../../../public/avatar";
 import { Vector } from "../../../public/vector";
@@ -18,6 +17,7 @@ export const Header = () => {
   const { close, isOpen, open } = useModal();
   const { data, isLoading } = useGetCatalog();
   return (
+    <div className="bg-[#f8f6f6]">
     <div className=" container">
       <div className="hidden lg:flex justify-end pt-2 ">
         <a className="mr-[24px] hover:text-redBg" href="/">
@@ -68,7 +68,7 @@ export const Header = () => {
         <div className="flex mr-8">
           <Modal close={close} isOpen={isOpen}>
             <Link className=" text-red-700" to="/category/123">
-              Category
+            Каталог
             </Link>
             {isLoading ? (
               <Skeleton count={7} height={50} />
@@ -92,7 +92,7 @@ export const Header = () => {
           </a>
           <Button
             onClick={open}
-            className="flex bg-redBg text-white py-[10px] pr-[45px] pl-[12px] items-center gap-3 text-[20px leading-[29px] font-normal"
+            className="flex bg-redBg hover:bg-[#a90b0b]  text-white py-[10px] pr-[45px] pl-[12px] items-center gap-3 text-[20px leading-[29px] font-normal"
           >
             {" "}
             <MenuIcon />
@@ -125,6 +125,7 @@ export const Header = () => {
           </Button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
